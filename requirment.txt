@@ -3,3 +3,7 @@ numpy
 scikit-learn
 requests
 datetime
+flask
+flask-pymongo
+python-dotenv
+gunicorn

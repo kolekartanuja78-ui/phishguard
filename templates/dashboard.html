@@ -1,0 +1,18 @@
+
+<h2>Welcome {{ user.name }}</h2>
+
+<form method="POST">
+  <input type="text" name="link" placeholder="Enter Link" required>
+  <button type="submit">Generate QR</button>
+</form>
+
+<h3>Your Links</h3>
+
+{% for l in user.links %}
+  <div style="margin:20px;">
+    <p>Original Link: {{ l.originalLink }}</p>
+    <img src="/{{ l.qrPath }}" width="150">
+  </div>
+{% endfor %}
+
+<a href="/logout">Logout</a>

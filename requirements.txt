@@ -1,9 +1,8 @@
-streamlit
+flask
 numpy
 scikit-learn
-requests
-datetime
-flask
+opencv-python-headless
 flask-pymongo
-python-dotenv
+qrcode
+pillow
 gunicorn
